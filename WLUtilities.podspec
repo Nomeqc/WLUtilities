@@ -30,7 +30,13 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'WLUtilities/Classes/**/*'
+  # s.source_files = 'Pod/Classes/**/*'
+
+  s.subspec 'Location' do |loc|
+      loc.source_files = 'Pod/Classes/Location/*.{h,m}'
+      loc.public_header_files = 'Pod/Classes/Location/*.h'
+      loc.frameworks = 'CoreLocation'
+  end
   
   # s.resource_bundles = {
   #   'WLUtilities' => ['WLUtilities/Assets/*.png']

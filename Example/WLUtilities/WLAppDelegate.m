@@ -7,12 +7,28 @@
 //
 
 #import "WLAppDelegate.h"
+#import "WLLocationManager.h"
 
 @implementation WLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+
+//    [[WLLocationManager sharedInstance] requestLocation];
+    
+    [[WLLocationManager sharedInstance] requestLocationWithUpdateHandler:^(NSArray<CLPlacemark *> *placemarks, CLLocationDegrees longitude, CLLocationDegrees latitude, NSError *error) {
+        NSLog(@"经度:%lf,纬度:%lf",longitude,latitude);
+    } deniedHandler:^{
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"请到设置中开启定位" preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:NULL]];
+        [self.window.rootViewController presentViewController:alertController animated:YES completion:NULL];
+    }];
+    
+//    [[WLLocationManager sharedInstance] queryAuthorizationStatusWithDeniedHandler:^{
+//        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"请到设置中开启定位" preferredStyle:UIAlertControllerStyleAlert];
+//        [self.window.rootViewController presentViewController:alertController animated:YES completion:NULL];
+//    }];
     return YES;
 }
 

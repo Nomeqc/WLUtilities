@@ -1,0 +1,18 @@
+PODS:
+  - WLUtilities (0.1.0):
+    - WLUtilities/Location (= 0.1.0)
+  - WLUtilities/Location (0.1.0)
+
+DEPENDENCIES:
+  - WLUtilities (from `../`)
+
+EXTERNAL SOURCES:
+  WLUtilities:
+    :path: ../
+
+SPEC CHECKSUMS:
+  WLUtilities: c89e820e14086402e68465c3742e1825e317cb4b
+
+PODFILE CHECKSUM: 3f602344c171d1a7b3d0f6c6d41421a298f28502
+
+COCOAPODS: 1.3.1
