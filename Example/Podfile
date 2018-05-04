@@ -1,11 +1,14 @@
 use_frameworks!
 
+source 'http://gitlab.fallrainy.top/root/XDBSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git' #官方仓库的地址
 target 'WLUtilities_Example' do
   pod 'WLUtilities', :path => '../'
+#  pod 'WLUtilities/Location'
 
   target 'WLUtilities_Tests' do
     inherit! :search_paths
-
+  
     
   end
 end

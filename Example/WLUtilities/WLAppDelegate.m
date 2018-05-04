@@ -25,6 +25,8 @@
         [self.window.rootViewController presentViewController:alertController animated:YES completion:NULL];
     }];
     
+//     NSURL *URL = [NSURL URLWithString:@"http://www.baidu.com"];
+//    NSLog(@"abs string:%@",URL.absoluteString);
 //    [[WLLocationManager sharedInstance] queryAuthorizationStatusWithDeniedHandler:^{
 //        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"请到设置中开启定位" preferredStyle:UIAlertControllerStyleAlert];
 //        [self.window.rootViewController presentViewController:alertController animated:YES completion:NULL];

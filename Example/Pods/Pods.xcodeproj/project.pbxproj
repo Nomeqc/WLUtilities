@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0853A155489AB5E98DCA268C9749BD3C /* WLUtilities-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61764E0277647AC0D1891AE4709C0732 /* WLUtilities-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04C7BCA63E1B2413F751BEDE315149F6 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56B3B3A6203CF88B8D2B7D28AD1B3DC /* Photos.framework */; };
+		06184FD5B262AB035E98C13059D8AF95 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A461D7890C19C03E686B879DB2819B07 /* AVFoundation.framework */; };
+		078F6C0548EC38612CA48FAB7C578AD7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6787CEFDFC415B0CD63978A7562B4684 /* CoreLocation.framework */; };
 		1D947E613F528632290FF95A201F8525 /* Pods-WLUtilities_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AC733EBB81C35ADF86BC48ADD76DA8 /* Pods-WLUtilities_Tests-dummy.m */; };
-		4F0F206937749C0DAA92455F97604A39 /* WLUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DAE8F722A55B3CAE8B3D568DA13767 /* WLUtilities-dummy.m */; };
-		653A2234E616BB082D3F2F4AFFD64F76 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C13E24C78F19F66C8F5AC517D2A9B3D /* CoreLocation.framework */; };
-		7D166279CBB9E9B905B50A68383417CE /* WLLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 25B051B5DCC9648540C24A1F2D81AC0D /* WLLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6714DC939AF9E544FC8A4E6640B637E0 /* WLAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9368EDBE89C91D7A4D0C9E9C617C4B1A /* WLAuthorizationManager.m */; };
 		7FAA574AC25430B114655B8E05ADC07C /* Pods-WLUtilities_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E879E0454C2390DE1C797BA90416544 /* Pods-WLUtilities_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1497536CCBE82BA5443856355DDC238 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EE77B614F7D725FD6674F73B34F331 /* Foundation.framework */; };
-		D72BBF648A84E6C16523399AE4FA3F62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EE77B614F7D725FD6674F73B34F331 /* Foundation.framework */; };
+		92CD421B7305A897F233C0E1F87E3F71 /* WLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E748756E2888119D66C70502DC36551F /* WLLocationManager.m */; };
+		94BF30480334E8AFF11068FB283F6BB7 /* WLAuthorizationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F7D77BB182D5CDBDCD855569DF7CBCF4 /* WLAuthorizationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F4332AFDC2C71321E0F332974DB6EDC /* WLUtilities-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 745D68C18A52ACF10A0D3A254D258126 /* WLUtilities-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBDD3F20E4F6ABFA5E7C0508AB27C574 /* WLUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 559F4151FE6932830F5C896F43287574 /* WLUtilities-dummy.m */; };
+		D1497536CCBE82BA5443856355DDC238 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FDC461A4C6A241C7B0C24C6E11DA53 /* Foundation.framework */; };
+		D4E7931290E7668F4D2453F491FD4593 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FDC461A4C6A241C7B0C24C6E11DA53 /* Foundation.framework */; };
 		EB9BE6A8EBB8D6C22D5806E6B01B21BF /* Pods-WLUtilities_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB35810764F1BD29A51476E16E87644F /* Pods-WLUtilities_Example-dummy.m */; };
 		EE6CA0275E1F97DBB1254DE7FB1B5FBA /* Pods-WLUtilities_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C036F83CBB98F87573A950ED48096BF2 /* Pods-WLUtilities_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F05667898BAB90BE2B82E211DB8D40D3 /* WLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 018CBE4018285EBF20117EF72B322593 /* WLLocationManager.m */; };
-		F5AF8814263FA87079F0CA4991F34835 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EE77B614F7D725FD6674F73B34F331 /* Foundation.framework */; };
+		F4758FD71542217F3449FD52ADF16688 /* WLLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 153CFF068B7A9E49EF20FF7DC3790F2D /* WLLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5AF8814263FA87079F0CA4991F34835 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FDC461A4C6A241C7B0C24C6E11DA53 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,49 +36,55 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		018CBE4018285EBF20117EF72B322593 /* WLLocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WLLocationManager.m; path = Pod/Classes/Location/WLLocationManager.m; sourceTree = "<group>"; };
 		044450A3839B98A612C96165E58F27E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0902CE3CD9B909BAD22ABC82CD2E9256 /* WLUtilities-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WLUtilities-prefix.pch"; sourceTree = "<group>"; };
 		09AD0F4911416DE7CB3DCFC6D35DFD67 /* Pods-WLUtilities_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLUtilities_Example-frameworks.sh"; sourceTree = "<group>"; };
-		0C13E24C78F19F66C8F5AC517D2A9B3D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		111AD8BF39A023328D46D7A5FFAE9AF0 /* WLUtilities.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WLUtilities.modulemap; sourceTree = "<group>"; };
+		153CFF068B7A9E49EF20FF7DC3790F2D /* WLLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WLLocationManager.h; path = Pod/Classes/Location/WLLocationManager.h; sourceTree = "<group>"; };
 		166D9B3B54C5C808FF55427085935419 /* Pods_WLUtilities_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WLUtilities_Tests.framework; path = "Pods-WLUtilities_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4E85FD7C65B8ED8ABCE7AAA63D98C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25B051B5DCC9648540C24A1F2D81AC0D /* WLLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WLLocationManager.h; path = Pod/Classes/Location/WLLocationManager.h; sourceTree = "<group>"; };
 		26D9FB1B63F0C4CD760D8495B9736FB3 /* Pods-WLUtilities_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WLUtilities_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		2D87154DFB50A589E9005DF9C233B43F /* Pods-WLUtilities_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLUtilities_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		30EE77B614F7D725FD6674F73B34F331 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		41BBB20976C8A1B6F74C19A5B173128B /* WLUtilities-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WLUtilities-prefix.pch"; sourceTree = "<group>"; };
 		49AC733EBB81C35ADF86BC48ADD76DA8 /* Pods-WLUtilities_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WLUtilities_Tests-dummy.m"; sourceTree = "<group>"; };
-		5EC1972A64E51C1B8D7D379E491BDD92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61764E0277647AC0D1891AE4709C0732 /* WLUtilities-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WLUtilities-umbrella.h"; sourceTree = "<group>"; };
+		559F4151FE6932830F5C896F43287574 /* WLUtilities-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WLUtilities-dummy.m"; sourceTree = "<group>"; };
 		6198D476196E6C0555A5385865459F2E /* Pods-WLUtilities_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WLUtilities_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		62DEDC6D5ED5EF88396645AAD867EA85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		642B2E21B2E550021AD185EBE08DE51B /* Pods-WLUtilities_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLUtilities_Example-resources.sh"; sourceTree = "<group>"; };
 		652A26CBF2525F755C065537DEF5665E /* Pods-WLUtilities_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WLUtilities_Tests.modulemap"; sourceTree = "<group>"; };
+		6787CEFDFC415B0CD63978A7562B4684 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		6E879E0454C2390DE1C797BA90416544 /* Pods-WLUtilities_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WLUtilities_Tests-umbrella.h"; sourceTree = "<group>"; };
+		745D68C18A52ACF10A0D3A254D258126 /* WLUtilities-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WLUtilities-umbrella.h"; sourceTree = "<group>"; };
 		755B9D2313BA8CC672E01DCC0BD6A199 /* Pods-WLUtilities_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLUtilities_Tests-resources.sh"; sourceTree = "<group>"; };
 		82BDD54393030C0591D5F55F348479CC /* Pods-WLUtilities_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WLUtilities_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		90FDC461A4C6A241C7B0C24C6E11DA53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9368EDBE89C91D7A4D0C9E9C617C4B1A /* WLAuthorizationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WLAuthorizationManager.m; path = Pod/Classes/Authorization/WLAuthorizationManager.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		999B52B62A7DE6E9F75228F544051F5A /* Pods-WLUtilities_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLUtilities_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A461D7890C19C03E686B879DB2819B07 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		AB8FBA4E2D26C9C8C28A2C6972FDB152 /* WLUtilities.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WLUtilities.xcconfig; sourceTree = "<group>"; };
 		ACA46D856FE42826AA8C6D7526AA43BB /* Pods-WLUtilities_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WLUtilities_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BCF4443A96528B11ADDBAB86F4EFD7C6 /* Pods-WLUtilities_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLUtilities_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C036F83CBB98F87573A950ED48096BF2 /* Pods-WLUtilities_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WLUtilities_Example-umbrella.h"; sourceTree = "<group>"; };
-		C37A5D4802F180905AC768C725C4CB22 /* WLUtilities.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WLUtilities.modulemap; sourceTree = "<group>"; };
 		CAF6F23B601FB4B66C26431484D2E5FE /* Pods_WLUtilities_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WLUtilities_Example.framework; path = "Pods-WLUtilities_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1534C5AF9CB9947D3DD4DC615514E36 /* WLUtilities.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WLUtilities.xcconfig; sourceTree = "<group>"; };
 		D7485666CFF5AB64E22DECCF581F158D /* Pods-WLUtilities_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLUtilities_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		DC16CEA5E063A4B18FE358A414381FAF /* Pods-WLUtilities_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLUtilities_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DCA27054107CA4C8BB40268E08A7CD3C /* Pods-WLUtilities_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WLUtilities_Example.modulemap"; sourceTree = "<group>"; };
+		E56B3B3A6203CF88B8D2B7D28AD1B3DC /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		E748756E2888119D66C70502DC36551F /* WLLocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WLLocationManager.m; path = Pod/Classes/Location/WLLocationManager.m; sourceTree = "<group>"; };
 		E9D06A01D30CAA741A372FA3B3475F04 /* WLUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WLUtilities.framework; path = WLUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB35810764F1BD29A51476E16E87644F /* Pods-WLUtilities_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WLUtilities_Example-dummy.m"; sourceTree = "<group>"; };
-		F0DAE8F722A55B3CAE8B3D568DA13767 /* WLUtilities-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WLUtilities-dummy.m"; sourceTree = "<group>"; };
+		F7D77BB182D5CDBDCD855569DF7CBCF4 /* WLAuthorizationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WLAuthorizationManager.h; path = Pod/Classes/Authorization/WLAuthorizationManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		05F090DCA6D45D5C9BC9AC010B5F6682 /* Frameworks */ = {
+		27B2D4F51ADCD526BF449B62AF595FB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				653A2234E616BB082D3F2F4AFFD64F76 /* CoreLocation.framework in Frameworks */,
-				D72BBF648A84E6C16523399AE4FA3F62 /* Foundation.framework in Frameworks */,
+				06184FD5B262AB035E98C13059D8AF95 /* AVFoundation.framework in Frameworks */,
+				078F6C0548EC38612CA48FAB7C578AD7 /* CoreLocation.framework in Frameworks */,
+				D4E7931290E7668F4D2453F491FD4593 /* Foundation.framework in Frameworks */,
+				04C7BCA63E1B2413F751BEDE315149F6 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,13 +107,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24AEDD5EA58965560A59F61A9559BE46 /* Location */ = {
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				25B051B5DCC9648540C24A1F2D81AC0D /* WLLocationManager.h */,
-				018CBE4018285EBF20117EF72B322593 /* WLLocationManager.m */,
+				14CFD1ED38A443BF98C01AE300F80B39 /* iOS */,
 			);
-			name = Location;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14CFD1ED38A443BF98C01AE300F80B39 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A461D7890C19C03E686B879DB2819B07 /* AVFoundation.framework */,
+				6787CEFDFC415B0CD63978A7562B4684 /* CoreLocation.framework */,
+				90FDC461A4C6A241C7B0C24C6E11DA53 /* Foundation.framework */,
+				E56B3B3A6203CF88B8D2B7D28AD1B3DC /* Photos.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		261D10380C23614F42C2877F39CEAA5E /* WLUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				87A47099D13C82C97EA1066E04D04349 /* Authorization */,
+				D33F76C3C24D6B19A95AED5FCEDE5500 /* Location */,
+				FADE6C1A071384BA708030CC75E895AB /* Support Files */,
+			);
+			name = WLUtilities;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3623B178BBCC6BDCBF991A04F8E790CE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				261D10380C23614F42C2877F39CEAA5E /* WLUtilities */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		37FBC5D0193FD490B5AB846E338A0021 /* Pods-WLUtilities_Tests */ = {
@@ -124,14 +163,6 @@
 			path = "Target Support Files/Pods-WLUtilities_Tests";
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CB1F9303D4FCFAC6F81DE9C9CE63F66E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		43C8659E90671F98020C36FEF58223BA /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,33 +172,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7C17896415630BB1A3879E5BBBD2D3C5 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A4D86FE5C9BA6A2CE1906EBD2CA80AFF /* WLUtilities */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				7C17896415630BB1A3879E5BBBD2D3C5 /* Development Pods */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				3623B178BBCC6BDCBF991A04F8E790CE /* Development Pods */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
 				A57A9F3D9920781C5374A558E62216CB /* Products */,
 				43C8659E90671F98020C36FEF58223BA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A4D86FE5C9BA6A2CE1906EBD2CA80AFF /* WLUtilities */ = {
+		87A47099D13C82C97EA1066E04D04349 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				24AEDD5EA58965560A59F61A9559BE46 /* Location */,
-				F481CD38999370C14699DA8764191F32 /* Support Files */,
+				F7D77BB182D5CDBDCD855569DF7CBCF4 /* WLAuthorizationManager.h */,
+				9368EDBE89C91D7A4D0C9E9C617C4B1A /* WLAuthorizationManager.m */,
 			);
-			name = WLUtilities;
-			path = ../..;
+			name = Authorization;
 			sourceTree = "<group>";
 		};
 		A57A9F3D9920781C5374A558E62216CB /* Products */ = {
@@ -198,24 +220,24 @@
 			path = "Target Support Files/Pods-WLUtilities_Example";
 			sourceTree = "<group>";
 		};
-		CB1F9303D4FCFAC6F81DE9C9CE63F66E /* iOS */ = {
+		D33F76C3C24D6B19A95AED5FCEDE5500 /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				0C13E24C78F19F66C8F5AC517D2A9B3D /* CoreLocation.framework */,
-				30EE77B614F7D725FD6674F73B34F331 /* Foundation.framework */,
+				153CFF068B7A9E49EF20FF7DC3790F2D /* WLLocationManager.h */,
+				E748756E2888119D66C70502DC36551F /* WLLocationManager.m */,
 			);
-			name = iOS;
+			name = Location;
 			sourceTree = "<group>";
 		};
-		F481CD38999370C14699DA8764191F32 /* Support Files */ = {
+		FADE6C1A071384BA708030CC75E895AB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5EC1972A64E51C1B8D7D379E491BDD92 /* Info.plist */,
-				C37A5D4802F180905AC768C725C4CB22 /* WLUtilities.modulemap */,
-				D1534C5AF9CB9947D3DD4DC615514E36 /* WLUtilities.xcconfig */,
-				F0DAE8F722A55B3CAE8B3D568DA13767 /* WLUtilities-dummy.m */,
-				0902CE3CD9B909BAD22ABC82CD2E9256 /* WLUtilities-prefix.pch */,
-				61764E0277647AC0D1891AE4709C0732 /* WLUtilities-umbrella.h */,
+				62DEDC6D5ED5EF88396645AAD867EA85 /* Info.plist */,
+				111AD8BF39A023328D46D7A5FFAE9AF0 /* WLUtilities.modulemap */,
+				AB8FBA4E2D26C9C8C28A2C6972FDB152 /* WLUtilities.xcconfig */,
+				559F4151FE6932830F5C896F43287574 /* WLUtilities-dummy.m */,
+				41BBB20976C8A1B6F74C19A5B173128B /* WLUtilities-prefix.pch */,
+				745D68C18A52ACF10A0D3A254D258126 /* WLUtilities-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/WLUtilities";
@@ -232,12 +254,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C93E1F8D16A8C2C19CEFE1A971F13B7 /* Headers */ = {
+		3F1296A4D5507123DF252FBB6C1BBABA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D166279CBB9E9B905B50A68383417CE /* WLLocationManager.h in Headers */,
-				0853A155489AB5E98DCA268C9749BD3C /* WLUtilities-umbrella.h in Headers */,
+				94BF30480334E8AFF11068FB283F6BB7 /* WLAuthorizationManager.h in Headers */,
+				F4758FD71542217F3449FD52ADF16688 /* WLLocationManager.h in Headers */,
+				9F4332AFDC2C71321E0F332974DB6EDC /* WLUtilities-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,9 +279,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B06FF4A011B907F9DA2C6034BD61600 /* Build configuration list for PBXNativeTarget "WLUtilities" */;
 			buildPhases = (
-				62783645EEF23C517C08FEB1C347F685 /* Sources */,
-				05F090DCA6D45D5C9BC9AC010B5F6682 /* Frameworks */,
-				6C93E1F8D16A8C2C19CEFE1A971F13B7 /* Headers */,
+				8D2B0A7F3593B7108D990EA3CB7549B8 /* Sources */,
+				27B2D4F51ADCD526BF449B62AF595FB5 /* Frameworks */,
+				3F1296A4D5507123DF252FBB6C1BBABA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -333,20 +356,21 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		62783645EEF23C517C08FEB1C347F685 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F05667898BAB90BE2B82E211DB8D40D3 /* WLLocationManager.m in Sources */,
-				4F0F206937749C0DAA92455F97604A39 /* WLUtilities-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		897899A14ADC14ED425F2E2D0FD23320 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1D947E613F528632290FF95A201F8525 /* Pods-WLUtilities_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D2B0A7F3593B7108D990EA3CB7549B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6714DC939AF9E544FC8A4E6640B637E0 /* WLAuthorizationManager.m in Sources */,
+				92CD421B7305A897F233C0E1F87E3F71 /* WLLocationManager.m in Sources */,
+				CBDD3F20E4F6ABFA5E7C0508AB27C574 /* WLUtilities-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +396,7 @@
 /* Begin XCBuildConfiguration section */
 		058A909C59BDFF8679DF864CA1DA4114 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1534C5AF9CB9947D3DD4DC615514E36 /* WLUtilities.xcconfig */;
+			baseConfigurationReference = AB8FBA4E2D26C9C8C28A2C6972FDB152 /* WLUtilities.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -498,7 +522,7 @@
 		};
 		5460B1B38DB9DE69DEDBEB6BAEBB7A21 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1534C5AF9CB9947D3DD4DC615514E36 /* WLUtilities.xcconfig */;
+			baseConfigurationReference = AB8FBA4E2D26C9C8C28A2C6972FDB152 /* WLUtilities.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

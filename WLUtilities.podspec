@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WLUtilities'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of WLUtilities.'
+  s.version          = '0.1.1'
+  s.summary          = 'Utilities'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,28 +21,25 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/nomeqc@gmail.com/WLUtilities'
+  s.homepage         = 'https://github.com/Nomeqc/WLUtilities'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'nomeqc@gmail.com' => 'xie5405@163.com' }
-  s.source           = { :git => 'https://github.com/nomeqc@gmail.com/WLUtilities.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Nomeqc/WLUtilities.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  # s.source_files = 'Pod/Classes/**/*'
 
   s.subspec 'Location' do |loc|
       loc.source_files = 'Pod/Classes/Location/*.{h,m}'
       loc.public_header_files = 'Pod/Classes/Location/*.h'
       loc.frameworks = 'CoreLocation'
   end
-  
-  # s.resource_bundles = {
-  #   'WLUtilities' => ['WLUtilities/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'Authorization' do |aut|
+      aut.source_files = 'Pod/Classes/Authorization/*.{h,m}'
+      aut.public_header_files = 'Pod/Classes/Authorization/*.h'
+      aut.frameworks = 'Photos', 'AVFoundation'
+ end
+
 end

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "WLAuthorizationManager.h"
 #import "WLLocationManager.h"
 
 FOUNDATION_EXPORT double WLUtilitiesVersionNumber;

@@ -1,9 +1,9 @@
 {
   "name": "WLUtilities",
-  "version": "0.1.0",
-  "summary": "A short description of WLUtilities.",
+  "version": "0.1.1",
+  "summary": "Utilities",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/nomeqc@gmail.com/WLUtilities",
+  "homepage": "https://github.com/Nomeqc/WLUtilities",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "nomeqc@gmail.com": "xie5405@163.com"
   },
   "source": {
-    "git": "https://github.com/nomeqc@gmail.com/WLUtilities.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Nomeqc/WLUtilities.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -24,6 +24,15 @@
       "source_files": "Pod/Classes/Location/*.{h,m}",
       "public_header_files": "Pod/Classes/Location/*.h",
       "frameworks": "CoreLocation"
+    },
+    {
+      "name": "Authorization",
+      "source_files": "Pod/Classes/Authorization/*.{h,m}",
+      "public_header_files": "Pod/Classes/Authorization/*.h",
+      "frameworks": [
+        "Photos",
+        "AVFoundation"
+      ]
     }
   ]
 }
