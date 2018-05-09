@@ -8,6 +8,8 @@
 
 #import "WLAppDelegate.h"
 #import "WLLocationManager.h"
+#import "WXBRequest.h"
+#import "YTKNetworkConfig.h"
 
 @implementation WLAppDelegate
 
@@ -16,6 +18,7 @@
     // Override point for customization after application launch.
 
 //    [[WLLocationManager sharedInstance] requestLocation];
+    [YTKNetworkConfig sharedConfig].baseUrl = @"http://192.168.0.207:8818/";
     
     [[WLLocationManager sharedInstance] requestLocationWithUpdateHandler:^(NSArray<CLPlacemark *> *placemarks, CLLocationDegrees longitude, CLLocationDegrees latitude, NSError *error) {
         NSLog(@"经度:%lf,纬度:%lf",longitude,latitude);
@@ -31,6 +34,9 @@
 //        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"请到设置中开启定位" preferredStyle:UIAlertControllerStyleAlert];
 //        [self.window.rootViewController presentViewController:alertController animated:YES completion:NULL];
 //    }];
+    WXBRequest *request = [[WXBRequest alloc] init];
+    [request isJsonStatusOK];
+    
     return YES;
 }
 

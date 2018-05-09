@@ -9,6 +9,7 @@
 #import "WLViewController.h"
 #import "WLLocationManager.h"
 #import "WLAuthorizationManager.h"
+#import "WXBRegisterApi.h"
 
 @interface WLViewController ()
 
@@ -19,7 +20,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+    WXBRegisterApi *registerApi = [[WXBRegisterApi alloc] init];
+    [registerApi startWithCompletionBlockWithSuccess:^(WXBRegisterApi * _Nonnull request) {
+        NSLog(@"%@",registerApi.responseJSONObject);
+    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSLog(@"%@",request.error);
+    }];
 }
 - (IBAction)didTapVideoButton:(id)sender {
     [WLAuthorizationManager requestVideoAuthorizationWithGrantedHandler:^{

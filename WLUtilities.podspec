@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WLUtilities'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Utilities'
 
 # This description is used to generate tags and improve search results.
@@ -30,16 +30,23 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.subspec 'Location' do |loc|
-      loc.source_files = 'Pod/Classes/Location/*.{h,m}'
-      loc.public_header_files = 'Pod/Classes/Location/*.h'
-      loc.frameworks = 'CoreLocation'
+  s.subspec 'Location' do |spec|
+      spec.source_files = 'Pod/Classes/Location/*.{h,m}'
+      spec.public_header_files = 'Pod/Classes/Location/*.h'
+      spec.frameworks = 'CoreLocation'
   end
 
-  s.subspec 'Authorization' do |aut|
-      aut.source_files = 'Pod/Classes/Authorization/*.{h,m}'
-      aut.public_header_files = 'Pod/Classes/Authorization/*.h'
-      aut.frameworks = 'Photos', 'AVFoundation'
- end
+  s.subspec 'Authorization' do |spec|
+      spec.source_files = 'Pod/Classes/Authorization/*.{h,m}'
+      spec.public_header_files = 'Pod/Classes/Authorization/*.h'
+      spec.frameworks = 'Photos', 'AVFoundation'
+  end
+
+  s.subspec 'Networking' do |spec|
+      spec.source_files = 'Pod/Classes/Networking/*.{h,m}'
+      spec.public_header_files = 'Pod/Classes/Networking/*.h'
+      spec.dependency 'YTKNetwork'
+      spec.dependency 'YYCache'
+  end
 
 end

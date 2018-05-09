@@ -1,6 +1,6 @@
 {
   "name": "WLUtilities",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "Utilities",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Nomeqc/WLUtilities",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Nomeqc/WLUtilities.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"
@@ -33,6 +33,19 @@
         "Photos",
         "AVFoundation"
       ]
+    },
+    {
+      "name": "Networking",
+      "source_files": "Pod/Classes/Networking/*.{h,m}",
+      "public_header_files": "Pod/Classes/Networking/*.h",
+      "dependencies": {
+        "YTKNetwork": [
+
+        ],
+        "YYCache": [
+
+        ]
+      }
     }
   ]
 }

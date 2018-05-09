@@ -12,6 +12,8 @@
 
 #import "WLAuthorizationManager.h"
 #import "WLLocationManager.h"
+#import "WLRequest.h"
+#import "WLRequestAccessory.h"
 
 FOUNDATION_EXPORT double WLUtilitiesVersionNumber;
 FOUNDATION_EXPORT const unsigned char WLUtilitiesVersionString[];

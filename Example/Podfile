@@ -1,9 +1,12 @@
 use_frameworks!
 
-source 'http://gitlab.fallrainy.top/root/XDBSpecs.git'
+source 'https://gitee.com/fallrainy/WLSpecs.git'
 source 'https://github.com/CocoaPods/Specs.git' #官方仓库的地址
 target 'WLUtilities_Example' do
   pod 'WLUtilities', :path => '../'
+#    pod 'WLUtilities', '~> 0.1.1'
+#    pod 'YTKNetwork'
+#    pod 'YYCache'
 #  pod 'WLUtilities/Location'
 
   target 'WLUtilities_Tests' do

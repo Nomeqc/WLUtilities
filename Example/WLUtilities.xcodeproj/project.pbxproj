@@ -24,6 +24,8 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		94A9D5BDDACF277CEE5CD3E4 /* Pods_WLUtilities_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4721988DCE7DDA1160AA22 /* Pods_WLUtilities_Example.framework */; };
 		A88EF90DCD9DCFF2FC9123B5 /* Pods_WLUtilities_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3D19CC465B924DC82D02A4 /* Pods_WLUtilities_Tests.framework */; };
+		CF77EC5020A2AA1B00E880F5 /* WXBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF77EC4D20A2AA1B00E880F5 /* WXBRequest.m */; };
+		CF77EC5420A2AD2F00E880F5 /* WXBRegisterApi.m in Sources */ = {isa = PBXBuildFile; fileRef = CF77EC5220A2AD2F00E880F5 /* WXBRegisterApi.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		8C3D19CC465B924DC82D02A4 /* Pods_WLUtilities_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLUtilities_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E4721988DCE7DDA1160AA22 /* Pods_WLUtilities_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLUtilities_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C989A95F503E58DE43DDB774 /* Pods-WLUtilities_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLUtilities_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLUtilities_Tests/Pods-WLUtilities_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF77EC4D20A2AA1B00E880F5 /* WXBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBRequest.m; sourceTree = "<group>"; };
+		CF77EC4E20A2AA1B00E880F5 /* WXBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBRequest.h; sourceTree = "<group>"; };
+		CF77EC5220A2AD2F00E880F5 /* WXBRegisterApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBRegisterApi.m; sourceTree = "<group>"; };
+		CF77EC5320A2AD2F00E880F5 /* WXBRegisterApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBRegisterApi.h; sourceTree = "<group>"; };
 		D55DDD4A5F3FCB036C4B0AAA /* WLUtilities.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WLUtilities.podspec; path = ../WLUtilities.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +138,7 @@
 		6003F593195388D20070C39A /* Example for WLUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				CF77EC3F20A291C100E880F5 /* Networking */,
 				6003F59C195388D20070C39A /* WLAppDelegate.h */,
 				6003F59D195388D20070C39A /* WLAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -196,6 +203,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CF77EC3F20A291C100E880F5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CF77EC5320A2AD2F00E880F5 /* WXBRegisterApi.h */,
+				CF77EC5220A2AD2F00E880F5 /* WXBRegisterApi.m */,
+				CF77EC4E20A2AA1B00E880F5 /* WXBRequest.h */,
+				CF77EC4D20A2AA1B00E880F5 /* WXBRequest.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,7 +226,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				C24A5C5055DF2BEC34D9435D /* [CP] Embed Pods Frameworks */,
-				14F784A940D7A2A17F6793E9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,8 +244,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				392343FED292F22C69B45547 /* [CP] Embed Pods Frameworks */,
-				D0EB555FBF0970A4EDED6AD6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,36 +315,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14F784A940D7A2A17F6793E9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLUtilities_Example/Pods-WLUtilities_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		392343FED292F22C69B45547 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLUtilities_Tests/Pods-WLUtilities_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C24A5C5055DF2BEC34D9435D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,11 +322,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WLUtilities_Example/Pods-WLUtilities_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/WLUtilities/WLUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WLUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -364,21 +355,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D0EB555FBF0970A4EDED6AD6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLUtilities_Tests/Pods-WLUtilities_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DF2E9F91FCFE8C2C7E2D4DF1 /* [CP] Check Pods Manifest.lock */ = {
@@ -407,7 +383,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* WLAppDelegate.m in Sources */,
+				CF77EC5020A2AA1B00E880F5 /* WXBRequest.m in Sources */,
 				6003F5A7195388D20070C39A /* WLViewController.m in Sources */,
+				CF77EC5420A2AD2F00E880F5 /* WXBRegisterApi.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,7 +521,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -560,7 +538,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
