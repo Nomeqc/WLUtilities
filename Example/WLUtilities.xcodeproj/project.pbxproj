@@ -72,7 +72,7 @@
 		CF77EC4E20A2AA1B00E880F5 /* WXBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBRequest.h; sourceTree = "<group>"; };
 		CF77EC5220A2AD2F00E880F5 /* WXBRegisterApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBRegisterApi.m; sourceTree = "<group>"; };
 		CF77EC5320A2AD2F00E880F5 /* WXBRegisterApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBRegisterApi.h; sourceTree = "<group>"; };
-		D55DDD4A5F3FCB036C4B0AAA /* WLUtilities.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WLUtilities.podspec; path = ../WLUtilities.podspec; sourceTree = "<group>"; };
+		D55DDD4A5F3FCB036C4B0AAA /* WLUtilities.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WLUtilities.podspec; path = ../WLUtilities.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
