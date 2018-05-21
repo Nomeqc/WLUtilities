@@ -17,28 +17,32 @@
 
 + (void)requestVideoAuthorizationWithGrantedHandler:(dispatch_block_t)grantedHandler deniedHandler:(WLAuthorizationManagerDeniedHandler)deniedHandler {
     dispatch_block_t successBlock = ^{
-        if (grantedHandler) {
-            grantedHandler();
-        }
+        dispatch_async(dispatch_get_main_queue(), ^(void) {
+            if (grantedHandler) {
+                grantedHandler();
+            }
+        });
     };
     WLAuthorizationManagerDeniedHandler failedBlock = ^(WLAuthorizationManagerDeniedReason reason){
-        if (deniedHandler) {
-            deniedHandler(reason);
-        } else {
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"未获得授权访问相机" message:@"请从设置中启用相机功能" preferredStyle:UIAlertControllerStyleAlert];
-            [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:NULL]];
-            UIAlertAction *gotoAction = [UIAlertAction actionWithTitle:@"前往设置" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                NSURL *settingURL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
-                if ([[UIApplication sharedApplication] canOpenURL:settingURL]) {
-                    [[UIApplication sharedApplication] openURL:settingURL];
+        dispatch_async(dispatch_get_main_queue(), ^(void) {
+            if (deniedHandler) {
+                deniedHandler(reason);
+            } else {
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"未获得授权访问相机" message:@"请从设置中启用相机功能" preferredStyle:UIAlertControllerStyleAlert];
+                [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:NULL]];
+                UIAlertAction *gotoAction = [UIAlertAction actionWithTitle:@"前往设置" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    NSURL *settingURL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+                    if ([[UIApplication sharedApplication] canOpenURL:settingURL]) {
+                        [[UIApplication sharedApplication] openURL:settingURL];
+                    }
+                }];
+                [alert addAction:gotoAction];
+                if (@available (iOS 9,*)) {
+                    alert.preferredAction = gotoAction;
                 }
-            }];
-            [alert addAction:gotoAction];
-            if (@available (iOS 9,*)) {
-                alert.preferredAction = gotoAction;
+                [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
             }
-            [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
-        }
+        });
     };
     
     AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
@@ -75,28 +79,32 @@
 
 + (void)requestAudioAuthorizationWithGrantedHandler:(dispatch_block_t)grantedHandler deniedHandler:(WLAuthorizationManagerDeniedHandler)deniedHandler {
     dispatch_block_t successBlock = ^{
-        if (grantedHandler) {
-            grantedHandler();
-        }
+        dispatch_async(dispatch_get_main_queue(), ^(void) {
+            if (grantedHandler) {
+                grantedHandler();
+            }
+        });
     };
     WLAuthorizationManagerDeniedHandler failedBlock = ^(WLAuthorizationManagerDeniedReason reason){
-        if (deniedHandler) {
-            deniedHandler(reason);
-        } else {
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"未获得授权访问麦克风" message:@"请前往设置中启用麦克风功能" preferredStyle:UIAlertControllerStyleAlert];
-            [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:NULL]];
-            UIAlertAction *gotoAction = [UIAlertAction actionWithTitle:@"前往设置" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                NSURL *settingURL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
-                if ([[UIApplication sharedApplication] canOpenURL:settingURL]) {
-                    [[UIApplication sharedApplication] openURL:settingURL];
+        dispatch_async(dispatch_get_main_queue(), ^(void) {
+            if (deniedHandler) {
+                deniedHandler(reason);
+            } else {
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"未获得授权访问麦克风" message:@"请前往设置中启用麦克风功能" preferredStyle:UIAlertControllerStyleAlert];
+                [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:NULL]];
+                UIAlertAction *gotoAction = [UIAlertAction actionWithTitle:@"前往设置" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    NSURL *settingURL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+                    if ([[UIApplication sharedApplication] canOpenURL:settingURL]) {
+                        [[UIApplication sharedApplication] openURL:settingURL];
+                    }
+                }];
+                [alert addAction:gotoAction];
+                if (@available (iOS 9,*)) {
+                    alert.preferredAction = gotoAction;
                 }
-            }];
-            [alert addAction:gotoAction];
-            if (@available (iOS 9,*)) {
-                alert.preferredAction = gotoAction;
+                [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
             }
-            [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
-        }
+        });
     };
     
     AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeAudio];
@@ -138,28 +146,32 @@
 
 + (void)requestPhotoAuthorizationWithGrantedHandler:(dispatch_block_t)grantedHandler deniedHandler:(WLAuthorizationManagerDeniedHandler)deniedHandler {
     dispatch_block_t successBlock = ^{
-        if (grantedHandler) {
-            grantedHandler();
-        }
+        dispatch_async(dispatch_get_main_queue(), ^(void) {
+            if (grantedHandler) {
+                grantedHandler();
+            }
+        });
     };
     WLAuthorizationManagerDeniedHandler failedBlock = ^(WLAuthorizationManagerDeniedReason reason){
-        if (deniedHandler) {
-            deniedHandler(reason);
-        } else {
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"未获得授权访问照片" message:@"请前往设置中启用照片功能" preferredStyle:UIAlertControllerStyleAlert];
-            [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:NULL]];
-            UIAlertAction *gotoAction = [UIAlertAction actionWithTitle:@"前往设置" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                NSURL *settingURL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
-                if ([[UIApplication sharedApplication] canOpenURL:settingURL]) {
-                    [[UIApplication sharedApplication] openURL:settingURL];
+        dispatch_async(dispatch_get_main_queue(), ^(void) {
+            if (deniedHandler) {
+                deniedHandler(reason);
+            } else {
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"未获得授权访问照片" message:@"请前往设置中启用照片功能" preferredStyle:UIAlertControllerStyleAlert];
+                [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:NULL]];
+                UIAlertAction *gotoAction = [UIAlertAction actionWithTitle:@"前往设置" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    NSURL *settingURL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+                    if ([[UIApplication sharedApplication] canOpenURL:settingURL]) {
+                        [[UIApplication sharedApplication] openURL:settingURL];
+                    }
+                }];
+                [alert addAction:gotoAction];
+                if (@available (iOS 9,*)) {
+                    alert.preferredAction = gotoAction;
                 }
-            }];
-            [alert addAction:gotoAction];
-            if (@available (iOS 9,*)) {
-                alert.preferredAction = gotoAction;
+                [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
             }
-            [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
-        }
+        });
     };
     
     PHAuthorizationStatus photoAuthorStatus = [PHPhotoLibrary authorizationStatus];

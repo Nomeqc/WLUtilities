@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YTKBaseRequest.h"
+
+@protocol YTKRequestAccessory;
+
 
 typedef void (^WLRequestAccessoryHandler) (id request);
 

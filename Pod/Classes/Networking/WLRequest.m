@@ -8,7 +8,7 @@
 
 #import "WLRequest.h"
 #import "AFHTTPSessionManager.h"
-#import "YTKNetworkAgent.h"
+#import <YTKNetwork/YTKNetworkAgent.h>
 #import <YYCache/YYCache.h>
 
 #ifndef NSFoundationVersionNumber_iOS_8_0
